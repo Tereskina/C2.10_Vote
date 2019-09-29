@@ -39,4 +39,7 @@ h1, h2 {
 
 .progress-bar {
 	background-color: rgb(201,165,125);
+	color: black;
+	font-size: 20px;
+	font-style: bold;
 }
