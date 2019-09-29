@@ -27,9 +27,9 @@ $('.Results').click(() => {
 //получаем данные с сервера
 ES.onmessage = message => {
 	voteData = JSON.parse(message.data)
-	dogsNow =  (voteData.dogs * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed();
-	catsNow =  (voteData.cats * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed();
-	parrNow =  (voteData.parrots * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed();
+	dogsNow =  (voteData.dogs * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed(1);
+	catsNow =  (voteData.cats * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed(1);
+	parrNow =  (voteData.parrots * 100 / (voteData.dogs + voteData.cats + voteData.parrots)).toFixed(1);
 	
 // Записываем данные в прогресс-бар
 	$('.dogs_').width(String(dogsNow) + "%").attr('aria-valuenow', dogsNow).text(`Dogs - ${dogsNow}%`);
