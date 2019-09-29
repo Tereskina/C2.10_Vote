@@ -1,0 +1,42 @@
+body {
+	background-color: rgb(231,220,207);
+}
+
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	margin: 0 10px;
+}
+
+.progress {
+	margin: 25px auto;
+	margin-left: auto;
+	height: 30px;
+}
+
+.pet {
+	width: 200px;
+	height: 200px;
+}
+
+.Results {
+	margin-top: 20px;
+	height: 45px;
+	font-weight: bold;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: black;
+	background-color: rgb(201,200,170);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Results:hover {
+  background-color: rgb(201,165,125);
+ }
+
+.progress-bar {
+	background-color: rgb(201,165,125);
+}
